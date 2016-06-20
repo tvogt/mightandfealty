@@ -32,7 +32,7 @@ class LoadBuildingData extends AbstractFixture implements OrderedFixtureInterfac
 		'Fairground'            => array('auto' =>  10000, 'min' =>   1200, 'work' =>  10000, 'ratio' =>  1000, 'requires' => array('Carpenter','Market')),
 		'Fortress'              => array('auto' =>      0, 'min' =>   4000, 'work' => 500000, 'ratio' =>  4000, 'defenses' => 60, 'requires' => array('Paved Streets','Armoury','Stone Castle','Mason'), 'conditions'=>true),
 		'Garrison'              => array('auto' =>      0, 'min' =>    400, 'work' =>  15000, 'ratio' =>  8000, 'requires' => array('Carpenter','Barracks')),
-		'Granary'               => array('auto' =>      0, 'min' =>   1000, 'work' =>   9000, 'ratio' =>   500, 'requires' => array('Carpenter','Mill','Market')),
+		'Granary'               => array('auto' =>      0, 'min' =>   1000, 'work' =>   9000, 'ratio' =>   700, 'requires' => array('Carpenter','Mill','Market')),
 		'Great Temple'          => array('auto' =>  50000, 'min' =>   5000, 'work' =>  50000, 'ratio' =>  3000, 'requires' => array('University','Temple','Master Mason','Paved Streets')),
 		'Guardhouse'            => array('auto' =>      0, 'min' =>    200, 'work' =>   8000, 'ratio' =>  5000, 'requires' => array('Training Ground')),
 		'Heavy Armourer'        => array('auto' =>  40000, 'min' =>   4000, 'work' =>  12000, 'ratio' =>  4000, 'requires' => array('Armourer')),
