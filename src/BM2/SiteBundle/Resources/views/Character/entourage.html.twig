@@ -31,7 +31,7 @@
 </p>
 
 {{ form_errors(form) }}
-<form action="" method="post">
+<form id="entourageform" action="" method="post">
 {{ form_widget(form._token) }}
 
 <table id="entourage">
@@ -103,7 +103,7 @@
 </div>
 {% endif %}
 
-<button>{{ 'recruit.manage.submit'|trans({},"actions") }}</button>
+<button id="do_submit">{{ 'recruit.manage.submit'|trans({},"actions") }}</button>
 </form>
 
 {% endblock %}
@@ -126,4 +126,12 @@ if ($("[id$=_action] option[value='bury']").length>0) {
 $("#entourage").tablesorter({
 	sortList: [[0,0]]
 });
+
+$("#do_submit").click(function(event){
+		event.preventDefault();
+		$(".actionsbar").replaceWith("loading...");
+		$("#do_submit").hide();
+		$("#entourage tr[has_changed='false']").remove();
+		$("#entourageform").submit();
+	});
 {% endblock %}
