@@ -7,8 +7,10 @@ This is *for testing only* and will be shut down again after a few days. But ple
 
 
 ### Recent Changes ###
+* The saddler and bowyer now provide a bonus to food production.
+* The fairground and merchant's quarter now produce tiny amounts of metal. This may not work, please report on the forums if it does not.
+* The Merchant's Quarter now provides a bonus to food production, this was missing.
 * Evasion chances have been reduced. The base chance has been lowered from 60% to 40% and the high cap was lowered from 90% to 80%.
-* On successful evade, enemies now get a 60 minute regroup timer to prevent immediate re-engages.q
 
 
 ### New / Experimental Features ###
